@@ -1,0 +1,39 @@
+@import variables/variables.sass
+@import mixins/mixins.sass
+
+
+.footer
+	width: 100%
+	height: 360px
+	+flexbox()
+
+	&__part
+		width: 50%
+		+flexbox()
+		+flex-direction(column)
+		
+
+		&--first
+			+background('../../dist/img/seaside.png', center, no-repeat)
+		&--second
+			+background('../../dist/img/roma.png', center, no-repeat)
+
+
+
+
+
+.footer__text
+		padding-left: 40px
+
+	&__first
+			margin: 40px 0 40px 40px
+			font-size: $text-size
+
+	h3
+		font-size: 2.1em
+
+	&__h3
+		font-size: 1.8em
+
+			
+
